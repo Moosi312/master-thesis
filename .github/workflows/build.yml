@@ -32,6 +32,7 @@ jobs:
 
       - name: Move PDFs to public directory
         run: |
+          mkdir -p public/
           mv *.pdf public/
 
       - uses: actions/upload-artifact@v4
