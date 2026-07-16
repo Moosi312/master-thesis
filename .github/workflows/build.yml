@@ -27,7 +27,7 @@ jobs:
             main.tex
 
           texlive_version: 2025
-          latexmk_use_xelatex: true  # To support CJK characters
+          latexmk_use_lualatex: true  # To support CJK characters
           extra_system_packages: "fontconfig font-noto-cjk font-noto-cjk-extra"
 
       - name: Move PDFs to public directory
