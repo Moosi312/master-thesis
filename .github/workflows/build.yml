@@ -24,9 +24,7 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: |
-            main-en.tex
-            main-zh.tex
-            main-ja.tex
+            main.tex
 
           texlive_version: 2025
           latexmk_use_xelatex: true  # To support CJK characters
