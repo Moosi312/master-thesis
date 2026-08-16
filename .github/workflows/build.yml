@@ -33,7 +33,9 @@ jobs:
       - name: Move PDFs to public directory
         run: |
           mkdir -p public/
-          mv *.pdf public/
+          # .latexmkrc sets $out_dir = 'out', so the PDF lands there.
+          # Fall back to the repo root in case that ever changes.
+          mv out/*.pdf public/ 2>/dev/null || mv *.pdf public/
 
       - uses: actions/upload-artifact@v4
         id: upload
