@@ -35,7 +35,7 @@ jobs:
           mkdir -p public/
           # .latexmkrc sets $out_dir = 'out', so the PDF lands there.
           # Fall back to the repo root in case that ever changes.
-          mv out/*.pdf public/ 2>/dev/null || mv *.pdf public/
+          mv out/*.pdf public/
 
       - uses: actions/upload-artifact@v4
         id: upload
