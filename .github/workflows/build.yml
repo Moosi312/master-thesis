@@ -30,12 +30,11 @@ jobs:
           latexmk_use_lualatex: true  # To support CJK characters
           extra_system_packages: "fontconfig font-noto-cjk font-noto-cjk-extra"
 
-      - name: Move PDFs to public directory
+      - name: Copy PDFs to public directory
         run: |
           mkdir -p public/
           # .latexmkrc sets $out_dir = 'out', so the PDF lands there.
-          # Fall back to the repo root in case that ever changes.
-          mv out/*.pdf public/
+          cp out/*.pdf public/
 
       - uses: actions/upload-artifact@v4
         id: upload
