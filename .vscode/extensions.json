@@ -1,0 +1,21 @@
+{
+  // Suggested on first open of this workspace. See README.md.
+  "recommendations": [
+    // Required: the committed settings.json configures this extension's
+    // lualatex + biber recipe, root file and output directory.
+    "James-Yu.latex-workshop",
+
+    // Grammar/style checking that understands LaTeX markup (ngerman + american).
+    "ltex-plus.vscode-ltex-plus",
+
+    // Spell checking in both document languages.
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-german",
+
+    // Fallback PDF viewer, if you prefer it over the LaTeX Workshop tab.
+    "tomoki1207.pdf",
+
+    // Optional formatter; note formatOnSave is deliberately off for [latex].
+    "nickfode.latex-formatter"
+  ]
+}

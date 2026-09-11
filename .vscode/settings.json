@@ -28,6 +28,10 @@
     {
       "name": "latexmk (lualatex + biber)",
       "tools": ["lualatexmk"]
+    },
+    {
+      "name": "latexmk clean",
+      "tools": ["latexmk-clean"]
     }
   ],
 
