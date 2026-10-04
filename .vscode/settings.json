@@ -1,4 +1,5 @@
 {
+  "ltex.language": "en-GB",
   // ---- Engine: this project REQUIRES LuaLaTeX ----
   // template/preamble.tex loads \usepackage[luatex]{graphicx}, and the CI
   // workflow uses latexmk_use_lualatex: true. LaTeX Workshop's default recipe
