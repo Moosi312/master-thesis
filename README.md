@@ -74,3 +74,5 @@ Build with `Ctrl+Alt+B`, or pick a recipe from the LaTeX sidebar
 to `main` using `xu-cheng/latex-action@v4` with TeX Live 2025. The PDF is
 uploaded as a build artifact and deployed to GitHub Pages. A green build is the
 reference for "this still compiles on a clean machine".
+
+The file is deployed here: [https://moosi312.github.io/master-thesis/main.pdf](https://moosi312.github.io/master-thesis/main.pdf)
