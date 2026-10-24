@@ -68,6 +68,24 @@ Build with `Ctrl+Alt+B`, or pick a recipe from the LaTeX sidebar
 - `tomoki1207.pdf` — fallback PDF viewer if you'd rather not use the Workshop tab.
 - `nickfode.latex-formatter` — optional; note `editor.formatOnSave` is deliberately off for `[latex]`.
 
+### LanguageTool Premium (LTeX+)
+
+LTeX+ uses a bundled local LanguageTool by default. To use your
+[LanguageTool Premium](https://languagetool.org/editor) account instead, add these
+to your **user** settings (`Ctrl+Shift+P` → "Preferences: Open User Settings (JSON)"),
+never to the committed `.vscode/settings.json`, since the API key is a secret:
+
+```jsonc
+{
+  "ltex.languageToolHttpServerUri": "https://api.languagetoolplus.com/",
+  "ltex.languageToolOrg.username": "<your LanguageTool account e-mail>",
+  "ltex.languageToolOrg.apiKey": "<your API key>"
+}
+```
+
+Get the API key at <https://languagetool.org/editor/settings/access-tokens>.
+Run "LTeX: Check Current Document" (or reload the window) to pick up the change.
+
 ## CI
 
 `.github/workflows/build.yml` compiles the thesis on every push and pull request

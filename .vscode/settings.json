@@ -1,5 +1,7 @@
 {
   "ltex.language": "en-GB",
+  "ltex.additionalRules.motherTongue": "de-AT",
+  "ltex.additionalRules.enablePickyRules": true,
   // ---- Engine: this project REQUIRES LuaLaTeX ----
   // template/preamble.tex loads \usepackage[luatex]{graphicx}, and the CI
   // workflow uses latexmk_use_lualatex: true. LaTeX Workshop's default recipe
