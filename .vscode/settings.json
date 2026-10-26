@@ -23,36 +23,46 @@
     {
       "name": "latexmk-clean",
       "command": "latexmk",
-      "args": ["-C", "-outdir=%OUTDIR%", "%DOC%"],
+      "args": [
+        "-C",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
       "env": {}
     }
   ],
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk (lualatex + biber)",
-      "tools": ["lualatexmk"]
+      "tools": [
+        "lualatexmk"
+      ]
     },
     {
       "name": "latexmk clean",
-      "tools": ["latexmk-clean"]
+      "tools": [
+        "latexmk-clean"
+      ]
     }
   ],
-
+  "latex-workshop.formatting.latex": "badness",
   // ---- Root file: force main.tex ----
   // template/preamble.tex contains \documentclass, so auto-detection can pick
   // the wrong root. Restrict the search to the project root.
-  "latex-workshop.latex.search.rootFiles.include": ["main.tex"],
-  "latex-workshop.latex.search.rootFiles.exclude": ["template/**", "content/**"],
-
+  "latex-workshop.latex.search.rootFiles.include": [
+    "main.tex"
+  ],
+  "latex-workshop.latex.search.rootFiles.exclude": [
+    "template/**",
+    "content/**"
+  ],
   // ---- Build artifacts out of the way ----
   "latex-workshop.latex.outDir": "%DIR%/out",
   "latex-workshop.latex.autoBuild.run": "onFileChange",
   "latex-workshop.latex.autoClean.run": "never",
-
   // ---- Preview in side panel + SyncTeX ----
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.synctex.afterBuild.enabled": true,
-
   // ---- Quality of life ----
   "latex-workshop.message.badbox.show": false,
   "[latex]": {
