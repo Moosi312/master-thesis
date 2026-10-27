@@ -45,7 +45,7 @@
       ]
     }
   ],
-  "latex-workshop.formatting.latex": "badness",
+  "latex-workshop.formatting.latex": "tex-fmt",
   // ---- Root file: force main.tex ----
   // template/preamble.tex contains \documentclass, so auto-detection can pick
   // the wrong root. Restrict the search to the project root.
@@ -67,6 +67,6 @@
   "latex-workshop.message.badbox.show": false,
   "[latex]": {
     "editor.wordWrap": "on",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   }
 }

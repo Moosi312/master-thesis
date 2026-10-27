@@ -89,31 +89,29 @@
 %%             see https://github.com/novoid/LaTeX-KOMA-template/issues/5
 %% "template/title_VWA": titlepage for Vorwissenschaftliche Arbeit
 
-
 %% Load main settings for document preamble:
 \input{template/preamble}%% DO NOT REMOVE THIS LINE!
-
 
 \setboolean{english_affidavit}{true}  %% "true" or "false"
 %% If set to "true": the language of the statutory declaration text is set to
 %% English, otherwise it is in German.
-
 
 %% ========================================================================
 %%%% Document metadata
 %% ========================================================================
 
 %% general metadata:
-\newcommand{\myauthor}{Fabian Mooslechner}  %% also used for PDF metadata (hyperref)
-\newcommand{\myauthorwithexistingtitles}{\myauthor{}, Bsc}  %% including
-                                %% university degree already held
-                                %% (BSc, MSc, ...)
-\newcommand{\mytitle}{Tech Atlas: A Configurable Data Pipeline for Integrating Austrian Research-Funding Data}  %% also used for PDF metadata (hyperref)
-\newcommand{\mysubject}{SUBJECT}  %% also used for PDF metadata (hyperref)
+\newcommand{\myauthor}{Fabian Mooslechner} %% also used for PDF metadata (hyperref)
+\newcommand{\myauthorwithexistingtitles}{\myauthor{}, Bsc} %% including
+%% university degree already held
+%% (BSc, MSc, ...)
+\newcommand{\mytitle}{Tech Atlas: A Configurable Data Pipeline for Integrating Austrian Research-Funding
+  Data} %% also used for PDF metadata (hyperref)
+\newcommand{\mysubject}{SUBJECT} %% also used for PDF metadata (hyperref)
 \newcommand{\mykeywords}{KEYWORDS}  %% also used for PDF metadata (hyperref)
 
 %% this information is used only for generating the title page:
-\newcommand{\myworktitle}{Master's Thesis}  %% official type of work like ``Master theses''
+\newcommand{\myworktitle}{Master's Thesis} %% official type of work like ``Master theses''
 \newcommand{\mygrade}{Dipl.-Ing./Master of Science} %% title you are getting with this work like ``Master of ...''
 \newcommand{\mystudy}{Computer Science} %% your study like ``Arts''
 \newcommand{\mydegreeprogramme}{Master's degree programme: \mystudy} %% Master's or PhD degree programme
@@ -130,7 +128,6 @@
 \newcommand{\myid}{11808063} %% Matrikelnummer
 \newcommand{\mylecture}{LECTURE} %%
 
-
 %% ========================================================================
 %%%% MISC command definitions
 %% ========================================================================
@@ -140,7 +137,6 @@
 %%%% Typographic settings
 %% ========================================================================
 \input{template/typographic_settings}
-
 
 %% ========================================================================
 %%%% MISC usepackages
@@ -154,16 +150,13 @@
 \usepackage{amsmath}
 \usepackage{placeins}
 \usepackage{geometry}
-\geometry{a4paper, portrait, tmargin=1.5in, bmargin=1.5in, outer=1.5in}
+\geometry{a4paper,portrait,tmargin=1.5in,bmargin=1.5in,outer=1.5in}
 
 %% ========================================================================
 %%%% MISC self-defined commands and settings
 %% ========================================================================
 
 %% ... it's OK to put here your own newcommand/newenvironment-definitions ...
-
-
-
 
 \newcommand{\myLaT}{\LaTeX{}@TUG\xspace} %% LaTeX@TUG text "logo"
 
@@ -189,7 +182,7 @@
 
 %% acronyms in small caps: \myacro{UNESCO}
 
-\input{template/pdf_settings}  %% should be *last* definitions in preamble!
+\input{template/pdf_settings} %% should be *last* definitions in preamble!
 %% ========================================================================
 %%%% begin{document}
 %% ========================================================================
@@ -200,7 +193,6 @@
 \input{\mytitlepage}
 
 \input{template/declaration_TU_Graz}
-
 
 %% include the abstract without chapter number but include it on table of contents:
 \cleardoublepage
@@ -229,10 +221,9 @@
 \include{content/appendix/appendix1}
 
 \printbibliography[notsubtype=game]
-\printbibliography[subtype=game, title={Ludography}]
+\printbibliography[subtype=game,title={Ludography}]
 
 % \include{further_ressources}  %% this is a suggestion: you have to create this file on demand
-
 
 %%%% end{document}
 \end{document}

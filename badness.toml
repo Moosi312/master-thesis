@@ -1,0 +1,4 @@
+#:schema https://badness.dev/badness.schema.json
+[format]
+line-width = 120
+item-indent = "indent"
