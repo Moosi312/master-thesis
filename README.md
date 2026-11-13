@@ -5,6 +5,8 @@
 TU Graz KOMA-Script thesis template. Root file is `main.tex`, the compiled PDF
 lands in `out/main.pdf` (the whole `out/` directory is gitignored).
 
+The file is deployed here: [https://moosi312.github.io/master-thesis/main.pdf](https://moosi312.github.io/master-thesis/main.pdf)
+
 ## Requirements
 
 - **A TeX distribution with LuaLaTeX** — TeX Live 2025 (what CI uses), MiKTeX, or
@@ -92,5 +94,3 @@ Run "LTeX: Check Current Document" (or reload the window) to pick up the change.
 to `main` using `xu-cheng/latex-action@v4` with TeX Live 2025. The PDF is
 uploaded as a build artifact and deployed to GitHub Pages. A green build is the
 reference for "this still compiles on a clean machine".
-
-The file is deployed here: [https://moosi312.github.io/master-thesis/main.pdf](https://moosi312.github.io/master-thesis/main.pdf)
