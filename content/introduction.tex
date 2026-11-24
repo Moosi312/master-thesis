@@ -1,6 +1,6 @@
 \chapter{Introduction}
 
-With this app we aim to be able to bring a new insightful perspective to the Austrian science and technology funding landscape.
+With this app, TechAtlas, we aim to be able to bring a new insightful perspective to the Austrian science and technology funding landscape.
 This analysis platform should connect companies, universities, and other research institutions through their common projects and fields of research.
 By connecting the project funding we wanted to show industry trend, research gaps and funding concentrations with publicly available data.
 
@@ -18,7 +18,54 @@ This project was created and supervised by \todo{titles} Alex from FORWIT in ord
     \citet{Pollard}
 \end{quote}
 
-\todo{Write something about importance of good and intuitively presented data for decision-making.}
+Technology and innovation are key drivers of economic prosperity, the standard of living, and societal progress.
+They fuel economic growth by enabling businesses and governments to optimize their operations, increase productivity,
+and create new opportunities in an increasingly interconnected global market.
+For individuals, technological progress translates into better healthcare, improved education, and more convenient
+everyday solutions, while breakthroughs in renewable energy, medical research, and communication systems help address
+global challenges such as climate change, public health, and social inequality.
+In light of growing geopolitical tensions and global competition, technological capabilities have also become a matter of
+industrial competitiveness, technological sovereignty, and resilience.
+Austria's Industrial Strategy 2035 \todo{cite IS2} responds to this by placing a selected set of key technology fields at
+the centre of its future industrial and innovation policy.
+Rather than creating an entirely new funding system, it builds on the existing innovation infrastructure, in which
+funding agencies such as the Austrian Science Fund (FWF) and the Austrian Research Promotion Agency (FFG)
+\todo{cite FWF, FFG} already manage extensive portfolios of research and innovation projects, ranging from basic research
+to application-oriented development and industrial implementation.
+
+However, steering such a portfolio is nearly impossible without access to accurate and comprehensive data.
+Data provides the foundation for identifying strengths and gaps, measuring performance, and uncovering opportunities for
+advancement; without it, any attempt to prioritize technologies or allocate funding would be like navigating in the dark.
+Yet, as the quote above suggests, the mere availability of data is not sufficient.
+Policymakers, analysts, and funding agencies typically operate under time pressure and are rarely data specialists
+themselves.
+Information that is scattered across sources, inconsistently structured, or only accessible through raw tables and
+lengthy reports places the burden of collecting, cleaning, and interpreting it on the decision-maker, which in practice
+means that it is often not used at all.
+Only when data is well structured, consistently linked, and presented in an intuitive and explorable way can it be
+turned into actionable insight.
+Well-designed visualizations and interactive dashboards allow users to grasp the overall picture at a glance, to drill
+down into the details where needed, and to discover relationships that would remain hidden in a textual summary.
+In this way, they lower the barrier to evidence-based policymaking and enable more transparent, informed, and
+impact-oriented decisions.
+
+The TechAtlas platform addresses this need for the Austrian research and innovation landscape.
+By integrating project, organization, and funding data from the FWF and the FFG into a single analytical environment,
+it enables key users, such as politicians, policymakers, funding agencies, and analysts, to explore technology-specific
+project portfolios, collaboration networks between academia and industry, and the geographical distribution of research
+and innovation activities across Austria's key technology fields.
+It thereby provides a transparent evidence base for identifying thematic concentrations, institutional linkages,
+regional patterns, and potential gaps in strategic technology portfolios, and supports aligning publicly funded research
+with the strategic priorities of the Industrial Strategy 2035.
+
+An intuitive dashboard, however, can only be as good as the data underneath it.
+This thesis therefore focuses on the data foundation of TechAtlas.
+It aims to develop a configurable data pipeline that gathers heterogeneous project, organization, and funding data from
+multiple sources, resolves inconsistencies between them, enriches them with additional publicly available information,
+and combines them into a consistent, continuously updated dataset.
+Since data sources and their interfaces change over time, the pipeline is designed to be configured, monitored, and
+maintained by domain experts without developer support, ensuring that TechAtlas remains a reliable and up-to-date
+evidence base in the long term.
 
 \section{Problem Formulation}
 
